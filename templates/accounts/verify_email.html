@@ -1,0 +1,63 @@
+{% include 'partials/header-home.html' %}
+
+<div class="container">
+		<div class="reset-field">
+            <span class="error_message"></span>
+			<div class="reset-password-section">
+				<h3>Verify Email</h3>
+				<p class="reset-text">
+					Password enter your email.
+				</p>
+				<div class="inputSection text-center">
+					<form id="verification_email">
+						<input type="email" name="email" class="form-control" placeholder="Email">
+						<button type="submit" class="btn btn-black btn-submit">Submit</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer-copyrights footer-fixed">
+		<div class="footer-copy">
+			<div class="container">
+				<div class="col-md-6 float-left">
+					<img src="/static/common/images/footer-logo.png">
+				</div>
+				<div class="col-md-6">
+					<label>&copy Copyrights Reserved </label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Js file -->
+<script src="/static/common/js/src/ajax_helper.js"></script>
+<script src="/static/app/home/js/auth.js"></script>
+<script>
+
+    $('#verification_email').validate({
+       rules: {
+            "email": {
+                required: true,
+                email:true,
+            },
+       },
+       submitHandler: function(form) {
+            $('.error_message').text('');
+            var data = {};
+            $(form).serializeArray().map(function(x){data[x.name] = x.value;});
+
+           var ajax_url = base_url+'/api/send-verification-email/';
+
+           ajaxFactory.ajaxHandler(ajax_url, 'POST', data, function(response){
+
+                if(response.status=='error') {
+                    $('.error_message').show().text(response.message);
+                }
+            })
+       }
+
+    });
+</script>
+</body>
+</html>

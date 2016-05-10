@@ -1,0 +1,536 @@
+[26/Dec/2015 08:09:10] ERROR [gunicorn.error:219] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/vinay/commonproject/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 112, in create
+    mod = import_module(mod_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named app.accountssocial.apps.django_app
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/vinay/commonproject/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 112, in create
+    mod = import_module(mod_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named app.accountssocial.apps.django_app
+[26/Dec/2015 08:09:10] ERROR [gunicorn.error:219] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/vinay/commonproject/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 112, in create
+    mod = import_module(mod_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named app.accountssocial.apps.django_app
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/vinay/commonproject/main/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 112, in create
+    mod = import_module(mod_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named app.accountssocial.apps.django_app
+[26/Dec/2015 08:09:10] INFO [gunicorn.error:213] Worker exiting (pid: 8454)
+[26/Dec/2015 08:09:10] INFO [gunicorn.error:213] Worker exiting (pid: 8454)
+[19/Jan/2016 04:36:53] INFO [gunicorn.error:224] Worker exiting (pid: 4141)
+[19/Jan/2016 04:36:53] INFO [gunicorn.error:224] Worker exiting (pid: 4141)
+[19/Jan/2016 04:39:12] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 04:39:15] WARNING [django.request:170] Not Found: /lo
+[19/Jan/2016 04:39:18] ERROR [django.request:256] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/contrib/auth/views.py", line 55, in login
+    form = authentication_form(request)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/contrib/auth/forms.py", line 146, in __init__
+    UserModel = get_user_model()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 155, in get_user_model
+    "AUTH_USER_MODEL refers to model '%s' that has not been installed" % settings.AUTH_USER_MODEL
+ImproperlyConfigured: AUTH_USER_MODEL refers to model 'accounts.User' that has not been installed
+[19/Jan/2016 04:40:41] INFO [gunicorn.error:224] Worker exiting (pid: 4692)
+[19/Jan/2016 04:40:41] INFO [gunicorn.error:224] Worker exiting (pid: 4692)
+[19/Jan/2016 05:00:40] ERROR [django.request:256] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return loader.get_template(template, using=self.using)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: registration/login.html
+[19/Jan/2016 05:00:43] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 05:00:57] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 05:01:02] ERROR [django.request:256] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return loader.get_template(template, using=self.using)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: registration/login.html
+[19/Jan/2016 05:01:13] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 05:04:35] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/urls.py modified
+[19/Jan/2016 05:04:35] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/urls.py modified
+[19/Jan/2016 05:04:35] INFO [gunicorn.error:224] Worker exiting (pid: 5461)
+[19/Jan/2016 05:04:35] INFO [gunicorn.error:224] Worker exiting (pid: 5461)
+[19/Jan/2016 05:04:38] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 05:04:43] ERROR [django.request:256] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return loader.get_template(template, using=self.using)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: registration/login.html
+[19/Jan/2016 05:06:51] INFO [gunicorn.error:224] Worker exiting (pid: 5554)
+[19/Jan/2016 05:06:51] INFO [gunicorn.error:224] Worker exiting (pid: 5554)
+[19/Jan/2016 05:10:20] ERROR [django.request:256] Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vinay/commonproject/app/accounts/views.py", line 76, in login
+    return render(request, 'accounts/login.html')
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 549, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 351, in app_dict
+    self._populate()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 307, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 337, in reverse_dict
+    self._populate()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 325, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 246, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 126, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import 'app.accounts.views.create_user'. View does not exist in module app.accounts.views.
+[19/Jan/2016 05:13:13] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/views.py modified
+[19/Jan/2016 05:13:13] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/views.py modified
+[19/Jan/2016 05:13:13] INFO [gunicorn.error:224] Worker exiting (pid: 5671)
+[19/Jan/2016 05:13:13] INFO [gunicorn.error:224] Worker exiting (pid: 5671)
+[19/Jan/2016 05:15:41] INFO [gunicorn.error:224] Worker exiting (pid: 5723)
+[19/Jan/2016 05:15:41] INFO [gunicorn.error:224] Worker exiting (pid: 5723)
+[19/Jan/2016 05:18:14] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 05:18:19] ERROR [django.request:256] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 133, in rendered_content
+    template = self._resolve_template(self.template_name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 88, in _resolve_template
+    new_template = self.resolve_template(template)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/response.py", line 80, in resolve_template
+    return loader.get_template(template, using=self.using)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: registration/login.html
+[19/Jan/2016 05:37:57] INFO [gunicorn.error:224] Worker exiting (pid: 5881)
+[19/Jan/2016 05:37:57] INFO [gunicorn.error:224] Worker exiting (pid: 5881)
+[19/Jan/2016 06:05:26] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:05:26] WARNING [django.request:170] Not Found: /favicon.ico
+[19/Jan/2016 06:05:26] WARNING [django.request:170] Not Found: /favicon.ico
+[19/Jan/2016 06:06:28] ERROR [django.request:256] Internal Server Error: /complete/facebook/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/utils.py", line 51, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/views.py", line 28, in complete
+    redirect_name=REDIRECT_FIELD_NAME, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/actions.py", line 43, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 41, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 229, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 68, in auth_complete
+    self.process_error(self.data)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 63, in process_error
+    data.get('error_code'))
+AuthCanceled: Authentication process canceled
+[19/Jan/2016 06:08:20] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:08:20] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:08:20] INFO [gunicorn.error:224] Worker exiting (pid: 6370)
+[19/Jan/2016 06:08:20] INFO [gunicorn.error:224] Worker exiting (pid: 6370)
+[19/Jan/2016 06:08:33] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:08:33] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:08:33] INFO [gunicorn.error:224] Worker exiting (pid: 6872)
+[19/Jan/2016 06:08:33] INFO [gunicorn.error:224] Worker exiting (pid: 6872)
+[19/Jan/2016 06:08:49] INFO [gunicorn.error:224] Worker exiting (pid: 6880)
+[19/Jan/2016 06:08:49] INFO [gunicorn.error:224] Worker exiting (pid: 6880)
+[19/Jan/2016 06:09:23] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:09:33] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:09:34] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQBG2VcOD9XegjH7vrspL47cgY25fFCQ9f3HcL3bdxeS9O3EZbQ9N3kFtZkcrGvwCOgdhuCY2kVa9TYc5P7RcC-if3Jsv90bsCi1VuVU5QyynPate2IDm-dkWGjMZKx_2ixz8Ho1MOt8j67X8_ecCHUSN8ZcUQz3JI4VLI0KqiP9BTFUEw_T26aAE2rfpeo6LmlotOdum1Pf3lem5fMsJDYN-gknJlW56VxDUvzoFBCnZyWHKzNi4e9YCyW8I1KHhPzUCXBfGmLOJmgwJ1NNlVtRcbDWsIhNbGbCaxeVfxGzRAc2GCernELvdgm22cajCpFA3ZyZZDGIfhp0_bIlpYmh&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DeYcGmbVMNHEF6gnGM0lKikzh74aiGGQ5 HTTP/1.1" 200 259
+[19/Jan/2016 06:09:34] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:09:34] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAOvUJq5gLazICZAErfKlrOn9XMjvdNKdLWyB05JYXsf7s9tVg7T5G8vkLlbIPlSQArsqMnTB1bCziCKX6XRxqK8yc8bKnHGfdEIEJJoKyDZAMZCuiOuJCMkZCEuwyRY3ws7GY5x4dlqPl75PZBszIKRpFgk5PLkP8ZB3F5MyFDctdN6BmezeAZD&appsecret_proof=2b4442f8d154a2383e3b397126ee76ec7ff53708f748657a79d38f159a2f4934 HTTP/1.1" 200 47
+[19/Jan/2016 06:09:35] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 06:10:00] WARNING [django.request:170] Not Found: /_
+[19/Jan/2016 06:14:10] INFO [gunicorn.error:224] Worker exiting (pid: 6893)
+[19/Jan/2016 06:14:10] INFO [gunicorn.error:224] Worker exiting (pid: 6893)
+[19/Jan/2016 06:39:45] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:39:48] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:39:49] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQDyTfTaYyH0B19f4Rm6h8ujqUHxE4tR3BtiWkA0hCONMOo2JhDjSSwoIZwB7qBWmTWXdyFpQMMKikDMLmwoX1q73-YA9TI3XiAZFuuXt3Nkw8mucBpukZgodRiHQy4VSj9IicUi2WlummkREvSywT8TW977Sx7PzrnNPUivrVpmh-CjnzB6_kR6A7Gt_OO-GIHLzsL4iMi_G01qLMjjLuCYIyyvKqAbkIGGPSAXsvnX_Vppc5h2nTrzlM5npBFmO_Eigh3UHdgLi4pZbEuNV9tx6lpPDeWJkq7d-GXFnbyH5Du_5FmGVeVfTZuV7cU9zp4GDJq7SeTAJTWcFeE1qOhZ&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 256
+[19/Jan/2016 06:39:49] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:39:49] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBABwd96CHJeo4pK5VVZBWtDKvGZCNJCLwoFUTAdqmkAEF8Tn2OauP0gLTFCkFokuEPGgW1xLZBg6nOCTL7h01XFpKvQNOuPLBTjgclx4KlESI1XSUBmLEjgzFwWGBwo27Q8lxJdmc0nbYXCCRqG8CWUmDgmzyK2eeNmblR4CINm0smylhXkZD&appsecret_proof=f9f7ed42bf16af90cad963fca97e9cc5f6aad9bbd7ee16cee2b7900101fb75a0 HTTP/1.1" 200 47
+[19/Jan/2016 06:39:49] ERROR [django.request:256] Internal Server Error: /complete/facebook/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/utils.py", line 51, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/views.py", line 28, in complete
+    redirect_name=REDIRECT_FIELD_NAME, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/actions.py", line 43, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 41, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 229, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 87, in auth_complete
+    return self.do_auth(access_token, response, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 119, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/strategies/django_strategy.py", line 96, in authenticate
+    return authenticate(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 82, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 85, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 111, in run_pipeline
+    func = module_member(name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 56, in module_member
+    module = import_module(mod)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 50, in import_module
+    __import__(name)
+ImportError: No module named accounts.pipelines
+[19/Jan/2016 06:40:18] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:18] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:18] INFO [gunicorn.error:224] Worker exiting (pid: 7312)
+[19/Jan/2016 06:40:18] INFO [gunicorn.error:224] Worker exiting (pid: 7312)
+[19/Jan/2016 06:40:30] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:30] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:30] INFO [gunicorn.error:224] Worker exiting (pid: 7334)
+[19/Jan/2016 06:40:30] INFO [gunicorn.error:224] Worker exiting (pid: 7334)
+[19/Jan/2016 06:40:34] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:40:36] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:40:36] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQDvuA2Bu_GbXN59St9sy4nKTR9W_CAuAuNvgf9BdRqa1xtDrL92dZAKFRkM4EUZvt5OSTnjqL5W-CR1LlwCZueEijHTOPQqpg_3a_Po-IjUXoIvt1Oy7vEoSTnTdb8EoUosY6C2_uVnz0VxTsz-Sa17XBlntzsk3lUBQEGtclgzmATWsYw4MWliL3iRCpFrNYWaMUkdSu4hWzdFnO2sAA_76pNvqLi67BLf9sivYrdV_V6Ji6kx52BGaX0-RvbOqi467lgP727pTWAvfRNkw3945Wk7S4hoA3cgAF5uH4Jao5uujiwppy9OqXIgumJmD6dg5SUPOZuBXhA5X32V1bub&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 261
+[19/Jan/2016 06:40:36] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:40:37] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAIXN7hzFaVR0JC4xINEEkaBSvmUTZC1T1kACzGEQbJvejRLd4wVoJl1QRkr5ZCVZApd74jO0URKT6WgDjru2AjxKCqQqscwEOKc5MRRdHtQ6JkdnG7UfuTTqTL0cPWQvopuKhyAsFMEqhU7fjUDBZCIwihyPJj5ZBZCY1Fiq8WB44WZAcAXtZB4ZD&appsecret_proof=50b9cdbbc935ea3e5ec649a46f7a7766751a984b9b441d5db0be571536256ee1 HTTP/1.1" 200 47
+[19/Jan/2016 06:40:37] ERROR [django.request:256] Internal Server Error: /complete/facebook/
+Traceback (most recent call last):
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/utils.py", line 51, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/apps/django_app/views.py", line 28, in complete
+    redirect_name=REDIRECT_FIELD_NAME, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/actions.py", line 43, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 41, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 229, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 87, in auth_complete
+    return self.do_auth(access_token, response, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/facebook.py", line 119, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/strategies/django_strategy.py", line 96, in authenticate
+    return authenticate(*args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 82, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 85, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/backends/base.py", line 111, in run_pipeline
+    func = module_member(name)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 56, in module_member
+    module = import_module(mod)
+  File "/home/vinay/env/local/lib/python2.7/site-packages/social/utils.py", line 50, in import_module
+    __import__(name)
+ImportError: No module named pipelines
+[19/Jan/2016 06:40:46] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:46] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:40:46] INFO [gunicorn.error:224] Worker exiting (pid: 7346)
+[19/Jan/2016 06:40:46] INFO [gunicorn.error:224] Worker exiting (pid: 7346)
+[19/Jan/2016 06:41:07] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:41:10] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:41:10] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQDQRaV10S_BIo3_pX5qR_BKlADLo0FZnRGGG4YWEKTEHDDZN2kvCWYLVq-8mcZ3P1RnwH4vqk5rI3SZFXYoK90FqtqrQyvu7FeCDeE01Uh2iO3uDnnkKcDuHkNhSnrSUum4iR7Nh5NNzNkfmCdZO8723yYJzwJ8EFoydw1HXUu-FfaL94LgqQDxZxErHC9x6UTCsZexnaLkaull_d-mSRiK4kTTqNOu66ej30c1o6Rn-95CQD-rHp5pqCbLpCVCSSleBbPAGkKMiX9DlHUcJnwv5__H2VAQnYQuXzXN6ZxQfkbsc8gTxbwVrID4UR_vFw5sdpsi2u7jkK1v68TCTO0n&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 258
+[19/Jan/2016 06:41:10] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:41:11] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAGZBACGrktfZBxsfxJBNCw7HuxsWocglmEbGuD5UZAXeaJFAduJkaQ7KrvKtl1EQLg7NhW9N7YHXIwQoY5Pvmbbm0KIlHyengJKB0dvi0IBHlGzHc0044mmKianKG5EdOn1fMDkEKNoQo5AR0ZA3srMScBpXeplRjJBrydU4DVBHZAOR1xzQZD&appsecret_proof=cdceaba10099731c69248d0991f612bcab1fb27271cd54d473174fc625b8baf1 HTTP/1.1" 200 47
+[19/Jan/2016 06:41:11] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 06:46:18] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/pipeline.py modified
+[19/Jan/2016 06:46:18] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/pipeline.py modified
+[19/Jan/2016 06:46:18] INFO [gunicorn.error:224] Worker exiting (pid: 7357)
+[19/Jan/2016 06:46:18] INFO [gunicorn.error:224] Worker exiting (pid: 7357)
+[19/Jan/2016 06:46:45] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:46:53] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:46:53] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQBwLchJvLhMmQKIkHOva3VA71MiPeohxJ_76p1CyUjApTV2z74B7ujnkivJ6XXiZNUO0rcPA51A5yBxY7RZl3KgfCbXWUBNzWWpKcZAlelBJUddyyGAO-sA6DY5PMKODDfSWMr3rqKkmq7d_cEugXgv_zy95kgwa39n7jbAkryJIQ-eKcxF_BIh7NVQGW7KSgTNUbz9DB8baEnwQlYOFWbcwbERMfXj1p2oG8njoo-gOSWaYxI-_Hu_SmdvvKoClRM2Hou3PoH3zWJpBPC2mLkJmHxfX2VrwklegN6NuKxZ_RgLm5V1B5VqmXG1G-crjDJjEacsj2kpwUstyaqor7jY&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 263
+[19/Jan/2016 06:46:53] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:46:54] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAFf4brYhi1lb1dnAZCYX27aZB1W7yAR2WzU8JAaJZC4hV03BWBCPcWgbsZB3T8SYbwbvdcoOjZBtAq8bbCkNmNmMMpQD8uWN3FEa1d7fVYKbZCNGlI58HyWKsSMXfhErpWFOUU7rcSu26koqX7TLccPLdiTCw2ZAKIqry8SkZBauQZAI23DuZBsWYZD&appsecret_proof=d268b063d9f0826354a39bddd9646f2d42e0d31d8fcbfb0222075506d946ed4c HTTP/1.1" 200 47
+[19/Jan/2016 06:46:54] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 06:47:21] INFO [gunicorn.error:224] Worker exiting (pid: 7479)
+[19/Jan/2016 06:47:21] INFO [gunicorn.error:224] Worker exiting (pid: 7479)
+[19/Jan/2016 06:54:43] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:54:43] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 06:54:43] INFO [gunicorn.error:224] Worker exiting (pid: 7735)
+[19/Jan/2016 06:54:43] INFO [gunicorn.error:224] Worker exiting (pid: 7735)
+[19/Jan/2016 06:55:38] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:55:46] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:55:46] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQBRV2snXpvqUo8zTw3AqOLYm72H8icMxS7NU08VI09m8YOafNFgFnjgQq8h0t8gYpOCu64w-OJx2kfHukDUJb30VsC7EplLdoQ985AANkgvSlAngShkn6w4Xk3j-Hr8qWm0hT9THCmPr__OGtXNwpzWfITA1hMt5ZVY8xKWvNlYUf-T4HQL6c9Haa1vvl5CQcdctkzbGvBzdReaQG4LW_nV5vHy_a7rWMYFzxzg94fc56I_kS3D7TRIvAv4AEUIRSxezb4wGKWNHgjktg972nTzX0x4IDFn_HcD7-7yNMX6_vSPF1c1R8F8xcfTTu6spYWCPw5YGrphcx_RJkGV0XYA&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 257
+[19/Jan/2016 06:55:46] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:55:47] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAIE9eb95A4Sb1ZAUoPNZCYk70JUHldgsWLrZAKg3LKfyn32tKOusZAIavj4sC1GMPPVpC42bRY9E3lY2bxabdVwjUevO02PQEi2tEYF6NPvkHVnwTK24UEFSOCcVD9stYBfzDYIHjmSu2J89p8KJl0UHSfQwFN5myUCid4vbu2Tup8CbRX4ZD&appsecret_proof=2ec5ff04bb9b73a1f6d5895a996120af3382c4f20acd1bfe1784ffd343e80f81 HTTP/1.1" 200 47
+[19/Jan/2016 06:55:47] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 06:57:10] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/pipeline.py modified
+[19/Jan/2016 06:57:10] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/app/accounts/pipeline.py modified
+[19/Jan/2016 06:57:10] INFO [gunicorn.error:224] Worker exiting (pid: 7748)
+[19/Jan/2016 06:57:10] INFO [gunicorn.error:224] Worker exiting (pid: 7748)
+[19/Jan/2016 06:57:21] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 06:57:59] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:58:00] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQDgiuw5bYI67hR2khpWKdz9ruyCpXSSyypcZ-NalDY_7m-1UzYUq640nVxh3UEEa1d7h4bvJImD7D_BiDX8kFQjFERo8YOhOnQK0HUIz6ctBSkVTwC56pWrDBLPJ4MpbLJQd0YrpjvBo85K5nVr9dvslZMur-t45Zritq2gq3VNOuLxP92w5lF3vQAP5C_2_IFMaezfvbGbR-dIOB-iyjuceTsvIQwMEOK4B_xqJs5_IjxAFMX21sXEmumgPMle-VXL1Y6KZaBZYRzdHOzWSfm3Cl_Ei65dxdlN8pPVhubn1jXmd_n9AI5aMOqtpy3PE2lZNB5dX4Qy-q_vbW7x7Tsd&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 264
+[19/Jan/2016 06:58:00] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 06:58:00] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAGZC0jk7wbq9bZAjZAnZAIZB7pheho8b2PYDDo4QbjyVVamgomFCvkX9kYWd9TdmEFYZCiGq6WpwIENmutjIfZC3llLa4dyo2b1G8Sjt6xHiKjBEK1YBJcMx4W3w1VfozbJeZBnWw9pQzXnrWkZBSWaZCbeV1Amok567ijZB2Tf99njgt1YeBwQFlEZD&appsecret_proof=89b3ed56989d7ace6bbd582893e6857da1b7448706cee1b67c17e8a02637b6ef HTTP/1.1" 200 47
+[19/Jan/2016 06:58:00] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 06:58:08] INFO [gunicorn.error:224] Worker exiting (pid: 7953)
+[19/Jan/2016 06:58:08] INFO [gunicorn.error:224] Worker exiting (pid: 7953)
+[19/Jan/2016 07:27:10] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 07:27:15] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:09:35] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:09:46] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:20:11] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:20:23] INFO [gunicorn.error:224] Worker exiting (pid: 8752)
+[19/Jan/2016 08:20:23] INFO [gunicorn.error:224] Worker exiting (pid: 8752)
+[19/Jan/2016 08:20:35] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:20:51] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:21:25] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 08:21:25] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/oauth/access_token?client_secret=acbc2f64d1cc7ab6c28510cd36025b7e&code=AQCBsyUhIL3KRW2nxHU18tNIoze-J0eiqCi0nhbFFxH7SLwtlZUFrcascg6tEcxi-82BL9bsB-thCH5LHNZQFOR1qOIhPlH67EWg-veZL9Mw4U6MVgsyUhUg8ndxRMIvcWu7S922Lx6h3INmKJt5PzXmJ-SVF3IvdlpHi-xKNa-afMuXASNjRmNumck0HA_TCm4lXnwpxdH9QrIvb4juauiVuSaurIlnyqZ-NikGx1OpVeWfxTgn79Aji7fN_xuLbzWfP6c-C65wJyIO4fCEv6mGy_lQEq_6f5u_c-9y0pfqjUFqnzfWCvcqxM1mvgx61i5AacYLAuDYA16w8sW5eT0i&client_id=511214295706675&redirect_uri=http%3A%2F%2Fcommonproj.com%3A8000%2Fcomplete%2Ffacebook%2F%3Fredirect_state%3DtlDZBt7OmYS33dVzuQcWlOf7lPI3MdX4 HTTP/1.1" 200 264
+[19/Jan/2016 08:21:25] INFO [requests.packages.urllib3.connectionpool:735] Starting new HTTPS connection (1): graph.facebook.com
+[19/Jan/2016 08:21:26] DEBUG [requests.packages.urllib3.connectionpool:383] "GET /v2.3/me?access_token=CAAHQ8lpZC7DMBAGm8ymgpOiuOR2FlvbuqG8hHBMt19inDx1ZAqxkToKVoij99THzE0X5WUlluZB7NEda1ZAEDz20jr14c1RfN9kFuZCt3KCZAin9ZA13RZAZA6AfGPbLxwqcJiueYYDnlwZAYE4ZCBkm7XiAOu6cS70Aj2bWaSF6gvBIWvZA06onumQt9yV2duiOxzIZD&appsecret_proof=c55b8e94a5c916db81994759619f411182d457b4ea8bb931eff6d7009982ecd9 HTTP/1.1" 200 47
+[19/Jan/2016 08:21:26] WARNING [django.request:170] Not Found: /
+[19/Jan/2016 08:21:29] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:23:45] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:23:45] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:23:46] INFO [gunicorn.error:224] Worker exiting (pid: 9441)
+[19/Jan/2016 08:23:46] INFO [gunicorn.error:224] Worker exiting (pid: 9441)
+[19/Jan/2016 08:23:50] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:23:52] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:23:53] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:23:56] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:23:58] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:24:51] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:24:51] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:24:51] INFO [gunicorn.error:224] Worker exiting (pid: 9515)
+[19/Jan/2016 08:24:51] INFO [gunicorn.error:224] Worker exiting (pid: 9515)
+[19/Jan/2016 08:24:54] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:24:57] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:24:59] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:25:25] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:25:25] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:25:25] INFO [gunicorn.error:224] Worker exiting (pid: 9538)
+[19/Jan/2016 08:25:25] INFO [gunicorn.error:224] Worker exiting (pid: 9538)
+[19/Jan/2016 08:25:44] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:25:44] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:25:44] INFO [gunicorn.error:224] Worker exiting (pid: 9552)
+[19/Jan/2016 08:25:44] INFO [gunicorn.error:224] Worker exiting (pid: 9552)
+[19/Jan/2016 08:26:33] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:26:36] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:36:58] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 08:57:20] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:57:20] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 08:57:20] INFO [gunicorn.error:224] Worker exiting (pid: 9561)
+[19/Jan/2016 08:57:20] INFO [gunicorn.error:224] Worker exiting (pid: 9561)
+[19/Jan/2016 08:57:47] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 08:57:48] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 09:11:43] INFO [gunicorn.error:224] Worker exiting (pid: 10234)
+[19/Jan/2016 09:11:43] INFO [gunicorn.error:224] Worker exiting (pid: 10234)
+[19/Jan/2016 09:57:01] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 09:58:14] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:07] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:08] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:12] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:04:14] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:31] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:39] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:04:44] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:04:46] WARNING [django.request:170] Not Found: /login/google-oauth2/
+[19/Jan/2016 10:10:01] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 10:10:01] INFO [gunicorn.error:224] Worker reloading: /home/vinay/commonproject/main/settings/development.py modified
+[19/Jan/2016 10:10:01] INFO [gunicorn.error:224] Worker exiting (pid: 14792)
+[19/Jan/2016 10:10:01] INFO [gunicorn.error:224] Worker exiting (pid: 14792)
+[19/Jan/2016 10:10:10] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:10:26] INFO [gunicorn.error:224] Worker exiting (pid: 14990)
+[19/Jan/2016 10:10:26] INFO [gunicorn.error:224] Worker exiting (pid: 14990)
+[19/Jan/2016 10:12:16] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:13:17] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:14:54] WARNING [django.request:170] Not Found: /static/main/js/src/jquery.js
+[19/Jan/2016 10:24:21] INFO [gunicorn.error:224] Worker exiting (pid: 15012)
+[19/Jan/2016 10:24:21] INFO [gunicorn.error:224] Worker exiting (pid: 15012)
+[04/Apr/2016 10:58:24] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+[04/Apr/2016 11:01:26] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'

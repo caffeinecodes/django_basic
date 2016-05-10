@@ -1,0 +1,42 @@
+{% include 'partials/header-home.html' %}
+
+<div class="container">
+		<div class="reset-field">
+			<div class="reset-password-section">
+				<h3>Verify Email</h3>
+				<p class="reset-text">
+					Password enter your email.
+				</p>
+				<div class="inputSection text-center">
+					<form>
+						<input type="email" name="email" class="form-control" placeholder="Email">
+						<button class="btn btn-black btn-submit">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class="reset-success-section hide">
+				<h3>Verification link expired.</h3>
+				<p class="reset-text">
+					Please click here to send the verification email.
+				</p>
+				<button class="btn btn-black">Resend verification email.</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyrights footer-fixed">
+		<div class="footer-copy">
+			<div class="container">
+				<div class="col-md-6 float-left">
+					<img src="/static/common/images/footer-logo.png">
+				</div>
+				<div class="col-md-6">
+					<label>&copy Copyrights Reserved </label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Js file -->
+<script src="/static/app/home/js/index.js"></script>
+<script src="/static/common/js/src/ajax_helper.js"></script>
+</body>
+</html>

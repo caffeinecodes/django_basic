@@ -1,0 +1,119 @@
+[04/Apr/2016 11:02:03] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'abc/$', views.faq, name='index'),
+AttributeError: 'module' object has no attribute 'faq'
+[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:02:17] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/urls.py modified
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
+[04/Apr/2016 11:02:55] INFO [gunicorn.error:224] Worker exiting (pid: 14524)
+[04/Apr/2016 11:08:42] ERROR [django.request:256] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/main/urls.py", line 11, in <module>
+    url(r'^home/', include('app.home.urls')),
+  File "/Users/Afxal/workspace/wedi/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Afxal/workspace/test_project/app/home/urls.py", line 6, in <module>
+    url(r'^$', views.index, name='index'),
+AttributeError: 'module' object has no attribute 'index'
+[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:08:50] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
+[04/Apr/2016 11:08:51] INFO [gunicorn.error:224] Worker exiting (pid: 14573)
+[04/Apr/2016 11:08:54] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:08:55] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker reloading: /Users/Afxal/workspace/test_project/app/home/views.py modified
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
+[04/Apr/2016 11:12:01] INFO [gunicorn.error:224] Worker exiting (pid: 14598)
+[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
+[04/Apr/2016 11:30:23] INFO [gunicorn.error:224] Worker exiting (pid: 14603)
+[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
+[04/Apr/2016 11:38:54] INFO [gunicorn.error:224] Worker exiting (pid: 14634)
+[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
+[04/Apr/2016 11:48:20] INFO [gunicorn.error:224] Worker exiting (pid: 14638)
+[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
+[04/Apr/2016 12:03:55] INFO [gunicorn.error:224] Worker exiting (pid: 14657)
+[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
+[04/Apr/2016 12:12:49] INFO [gunicorn.error:224] Worker exiting (pid: 14801)
+[04/Apr/2016 12:16:06] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:16:07] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
+[04/Apr/2016 12:19:07] INFO [gunicorn.error:224] Worker exiting (pid: 14981)
+[04/Apr/2016 12:23:32] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:01] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:17] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:19] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
+[04/Apr/2016 12:24:22] INFO [gunicorn.error:224] Worker exiting (pid: 15004)
+[04/Apr/2016 12:24:37] WARNING [django.request:170] Not Found: /home/static/home/js/angular.js
+[04/Apr/2016 12:26:14] WARNING [django.request:170] Not Found: /
+[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
+[04/Apr/2016 12:28:17] INFO [gunicorn.error:224] Worker exiting (pid: 15013)
+[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
+[04/Apr/2016 12:36:18] INFO [gunicorn.error:224] Worker exiting (pid: 15038)
+[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
+[04/Apr/2016 12:36:39] INFO [gunicorn.error:224] Worker exiting (pid: 15068)
+[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
+[04/Apr/2016 13:13:53] INFO [gunicorn.error:224] Worker exiting (pid: 15087)
+[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
+[04/Apr/2016 13:21:19] INFO [gunicorn.error:224] Worker exiting (pid: 15169)
+[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
+[04/Apr/2016 13:34:41] INFO [gunicorn.error:224] Worker exiting (pid: 15188)
+[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
+[04/Apr/2016 14:09:21] INFO [gunicorn.error:224] Worker exiting (pid: 19897)
+[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
+[04/Apr/2016 14:48:48] INFO [gunicorn.error:224] Worker exiting (pid: 20025)
+[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
+[04/Apr/2016 14:57:41] INFO [gunicorn.error:224] Worker exiting (pid: 20059)
+[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
+[04/Apr/2016 15:02:37] INFO [gunicorn.error:224] Worker exiting (pid: 20087)
+[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
+[04/Apr/2016 18:10:00] INFO [gunicorn.error:224] Worker exiting (pid: 20103)
+[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
+[05/Apr/2016 04:37:28] INFO [gunicorn.error:224] Worker exiting (pid: 20194)
+[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
+[05/Apr/2016 05:13:55] INFO [gunicorn.error:224] Worker exiting (pid: 20224)
+[05/Apr/2016 05:19:12] WARNING [django.request:170] Not Found: /
+[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
+[05/Apr/2016 05:34:27] INFO [gunicorn.error:224] Worker exiting (pid: 20402)
+[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
+[05/Apr/2016 06:13:16] INFO [gunicorn.error:224] Worker exiting (pid: 20782)
+[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
+[05/Apr/2016 06:23:15] INFO [gunicorn.error:224] Worker exiting (pid: 21121)
+[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
+[05/Apr/2016 07:03:56] INFO [gunicorn.error:224] Worker exiting (pid: 21268)
+[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
+[05/Apr/2016 07:12:21] INFO [gunicorn.error:224] Worker exiting (pid: 21584)
+[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)
+[05/Apr/2016 07:42:36] INFO [gunicorn.error:224] Worker exiting (pid: 21864)

@@ -1,0 +1,37 @@
+{% include 'partials/header-home.html' %}
+{% include 'partials/authentication.html' %}
+
+<div class="container">
+		<div class="reset-field">
+
+			<div class="reset-success-section">
+				<h3>Email verification.</h3>
+				<p class="reset-text">
+					Email verification has been completed successfully
+				</p>
+				<button class="btn btn-black">Login Using Email Address</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyrights footer-fixed">
+		<div class="footer-copy">
+			<div class="container">
+				<div class="col-md-6 float-left">
+					<img src="/static/common/images/footer-logo.png">
+				</div>
+				<div class="col-md-6">
+					<label>&copy Copyrights Reserved </label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Js file -->
+<script src="/static/common/js/src/ajax_helper.js"></script>
+<script src="/static/app/home/js/auth.js"></script>
+<script>
+    $('.btn-black').on('click', function(){
+        $('#loginModal').modal('show')
+    })
+</script>
+</body>
+</html>

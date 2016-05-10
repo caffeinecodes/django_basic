@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html ng-app="myApp">
+   
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+   </head>
+
+   <body>
+      <div>
+         {% verbatim %}
+         <label>Name:</label>
+         <input type = "text" ng-model = "yourName" placeholder = "Enter a name here">
+         <hr />
+         <h1>Hello {{yourName}}!</h1>
+     </div>
+      </div>
+ <div ng-app="" ng-init="quantity=1;price=5">
+
+Quantity: <input type="number"	ng-model="quantity">
+Costs:    <input type="number" ng-model="price">
+
+Total in dollar: {{ quantity * price }}
+
+</div>
+   <div ng-app="" ng-init="names=['Jani','Hege','Kai']">
+  <ul>
+    <li ng-repeat="x in names">
+      {{ x }}
+    </li>
+  </ul>
+</div>
+
+    <div ng-app="" ng-init="names1=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+
+<ul>
+  <li ng-repeat="x in names1">
+    {{ x.name + ', ' + x.country }}
+  </li>
+</ul>
+
+</div>
+
+   <form name="myForm">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+          {{myForm.myAddress.$dirty}}
+    {{myForm.myAddress.$touched}}
+</form>
+    <p ng-bind="yourName"></p>
+   </body>
+   <script type="text/javascript">
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "Afxal";
+    $scope.lastName = "Muhammed";
+});
+</script>
+ <style>
+input.ng-invalid {
+    background-color: red;
+}
+</style>
+</html>
+{% endverbatim %}

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creathives</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="creathives">
+	<meta name="author" content="Cartoon Mango Studios,CartoonMango">
+	<!-- fav icon -->
+	<link rel="shortcut icon" href="/static/common/images/fav-icon.png">
+	<!-- css link -->
+	<link rel="stylesheet" type="text/css" href="/static/common/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/common/css/bootstrap.min.css">
+	<link  rel="stylesheet" type="text/css" href="/static/common/css/font.css">
+	<link  rel="stylesheet" type="text/css" href="/static/common/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/static/common/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/app/accounts/css/portfolio.css">
+
+    <script src="/static/common/js/libs/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="/static/common/js/libs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/static/common/js/libs/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="container">
+      <div class="header-con">
+        <div class="logo">
+          <img src="/static/common/images/logo.png" alt="Creathives" class="logo-desk">
+          <img src="/static/common/images/logo-mobile.png" alt="Creathives" class="logo-mobile">
+        </div>
+        <div class="header-midMenu hide">
+          <ul>
+            <li>
+              <a href="" class="active">
+                <img src="/static/common/images/header/all.png" alt="all">
+                <div>All</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/common/images/header/videos.png" alt="videos">
+                <div>Videos</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/common/images/header/tracks.png" alt="audios">
+                <div>Tracks</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/common/images/header/images.png" alt="images">
+                <div>Images</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/common/images/header/articles.png" alt="articles">
+                <div>Articles</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-rightMenu">
+          <span>
+            <a href=""><img src="/static/common/images/bell.png" alt="Notifications"></a>
+          </span>
+          <span class="header-profilePic"><a href=""><img src="{{ artist.profile_pic }}" alt="{{ artist.user.get_full_name }}"></a>
+          </span>
+          <span>
+            <a href="{% url 'auth:logout' %}?next=/"><img src="/static/common/images/arrow-down.png" alt="View"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section id="banner">
+    <img src="{{ artist.cover_pic }}" class="cover_pic_box" alt="">
+      <input type="file" class="user_cover_pic hide user_pic" data-pic-type="cover">
+
+      {% if editable %}
+    <a href="#" class="edit-user-pic" data-pic-type="cover"> <img class="edit-wall"src="/static/common/images/edit/camera1.png" alt="Change"></a>
+      {% endif %}
+  </section>
+
+  <!-- User profile -->
+  <section id="userProfile" class="" data-artist-id="{{ user.artist.id }}">
+    <input type="file" class="user_profile_pic hide user_pic" data-pic-type="profile">
+    <div class="container">
+      <div class="profile_pic_large">
+        <img src="{{ artist.profile_pic }}" alt="{{ artist.user.get_full_name }}" class="profile_pic_box">
+          {% if editable %}
+        <a href="#" class="edit-user-pic" data-pic-type="profile"> <img class="edit-prof" src="/static/common/images/edit/camera2.png" alt="Change"></a>
+          {% endif %}
+      </div>
+      <div class="col-lg-4 col-lg-offset-2 col-md-4 col-offset-md-2 col-sm-10 col-sm-offset-2 col-xs-12">
+        <div class="profile_name">
+          <h3 class="color-000" contenteditable="false">{{ artist.user.get_full_name }}</h3>
+          <p class="color-666 user-obj" contenteditable="false">{{ artist.user.about_me }}</p>
+            {% if editable %}
+          <img src="/static/common/images/edit/pen.png" class="edit-pen" alt="edit">
+            {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-10 col-sm-offset-2 col-xs-12 pad-zero">
+        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 center-text ">
+          <div class="profile_emailId border-divider">
+            <a href="" mailto: class="color-000">
+              <span><img src="/static/common/images/mail.png" alt="Email"></span>
+              {{ artist.user.email }}
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12 center-text">
+          <div class="profile_contactNo border-divider">
+            <a href="" tel: class="color-000">
+              <span><img src="/static/common/images/phone.png" alt="Phone"></span>
+              {% if artist.user.contact_number %}
+                {{ artist.user.email }}
+              {% else %}
+                -----------
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- edit profile-->
+  <section id="uploadFile" class="">
+    <div class="tab-border">
+      <div class="container">
+        <ul>
+          <li class="active li-br">
+            <span>
+              <img src="/static/common/images/edit/portfolio.png" alt="Portfolio">
+              Portfolio
+            </span>
+          </li>
+          <li>
+            <img src="/static/common/images/edit/history.png" alt="History">
+            History
+          </li>
+        </ul>
+      </div>
+    </div>
+    {% if editable %}
+    <div class="upload-content">
+      <div class="container">
+        <p class="upload-note">Add more Projects to join the Talent pool <a href=""><img src="/static/common/images/edit/ques.png" alt="?"></a></p>
+        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12 pl-zero">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+              Protfolio 75% complete
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 text-center">
+          <button class="btn btn-black"> Add a project </button>
+        </div>
+        <div class="close-progress">
+          <img src="/static/common/images/close.png" alt="Close">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+  </section>
+
+  <!-- Main Content -->
+  <section id ="main_Content" class="margin-0">
+    <div class="container">
+
+      <!-- Left Panel -->
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pr-zero" id="leftView">
+        <div id="sticky-anchor"></div>
+        <!-- view profile -->
+        <div class="leftPanel">
+          <div class="lp_title">
+            {{ projects|length }} Projects
+            <button class="btn btn-black">ADD <img src="/static/common/images/edit/plus.png" alt="+"></button>
+          </div>
+          <hr class="ul-border">
+          <div class="left-panel-scroll">
+            <ul>
+                {% if editable %}
+                <li class="project-box new-project-container {% if projects %}hide{% endif %}">
+                    <a href="" data-project-id="0">
+                      <img class="project_thumbnail" src="/static/common/images/edit/titleImage.png" alt="Project Title">
+                      <span class="pr-title">Project Title</span>
+                      <div class="overLay"></div>
+
+                      <img class="hide action-btn" src="/static/common/images/edit/empty-trash.png" class="emptyTrash" alt="delete">
+                      <img class="hide action-btn" src="/static/common/images/edit/trash.png" class="deleteTrash" alt="delete">
+                    </a>
+                </li>
+              {% endif %}
+              {% for project in projects %}
+                  <li class="project-box">
+                    <a href="" data-project-id="{{ project.id }}">
+                      <img class="project_thumbnail" src="{{ project.thumbnail }}" alt="{{ project.title }}">
+                      <span class="pr-title">{{ project.title }}</span>
+                      <div class="overLay"></div>
+                      {% if editable %}
+                      <img src="/static/common/images/edit/empty-trash.png" class="emptyTrash" alt="delete">
+                      <img src="/static/common/images/edit/trash.png" class="deleteTrash" alt="delete">
+                      {% endif %}
+                    </a>
+                  </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <hr class="ul-border">
+        </div>
+      </div>
+
+      <!-- Right view body -->
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pl-zero mob-none" id="rightView">
+        <!-- View profile -->
+        <div class="right_viewArea">
+          <div id="anchor-point"></div>
+          <ul class="nav-categories" id="media_nav">
+            <li class="active">
+              <a href="#">
+                <img src="/static/common/images/header/all-black.png" alt="all">
+                <span>All</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/static/common/images/header/videos-black.png" alt="videos">
+                <span>Videos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/static/common/images/header/audios-black.png" alt="audios">
+                <span>Tracks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/static/common/images/header/images-black.png" alt="images">
+                <span>Images</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/static/common/images/header/articles-black.png" alt="articles">
+                <span>Articles</span>
+              </a>
+            </li>
+          </ul>
+          <div id="rightView_content">
+
+            <div class="pH_row {% if editable %}hide{% endif %}" data-current-project-id="{% if projects %}{{projects.0.id}}{% else %}0{% endif %}">
+              <div class="titleSection">
+                <span class="p_mt title-content">{{ projects.0.title }}</span>
+                <span class="p_st type-content">Project Type</span>
+              </div>
+              <div class="descSection">
+                <p class="desc-content">{{ projects.0.description }}</p>
+              </div>
+            </div>
+
+
+            <!-- edit Profile -->
+              {% if editable %}
+            <div class="pH_row-edit">
+              <div class="media">
+
+                <div class="media-left {% if projects %}hide{% endif %}">
+                  <a href="#" class="upload_project_img">
+                    <img class="media-object" src="/static/common/images/edit/titleImage.png" alt="Upload Image">
+                  </a>
+
+                </div>
+
+                <div class="media-left media-replace {% if not projects %}hide{% endif %}">
+                  <a href="#">
+                    <img class="media-object thumbnail-content" src="{{ projects.0.thumbnail }}" alt="Upload Image">
+                  </a>
+                    <div class="replace-img-overlay {% if not editable %}hide{% endif %}">
+                        <input type="file" name="project_image" class="project-img-input">
+
+                        <a href="#" class="upload_project_img">
+                           <div>
+                               <img src="/static/common/images/header/images-black.png" alt="Upload Image">
+                           </div>
+                            <span>Replace Your Image</span>
+                        </a>
+                    </div>
+                </div>
+                {% if projects %}
+                <div class="media-body">
+                  <h4 tabindex="0" class="media-heading edit-projTitle title-content editor" data-content-type="title" contenteditable="true">
+                    {{ projects.0.title }}
+                  </h4>
+                  <span tabindex="1" contenteditable="true" class="edit-projType type-content editor" data-content-type="type">
+                    Project Type
+                  </span>
+                  <p tabindex="2" contenteditable="true" class="edit-projDesc desc-content editor" data-content-type="description">
+                    {{ projects.0.description }}
+                  </p>
+                </div>
+                {% else %}
+                  <div class="media-body">
+                  <h4 tabindex="0" class="media-heading edit-projTitle  title-content editor" data-content-type="title" contenteditable="true">
+                    Project Title
+                  </h4>
+                  <span tabindex="1" contenteditable="true" class="edit-projType type-content editor" data-content-type="type">
+                    Project Type
+                  </span>
+                  <p tabindex="2" contenteditable="true" class="edit-projDesc desc-content editor" data-content-type="description">
+                    Enter your project description
+                  </p>
+                </div>
+                    {% endif %}
+
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="media-tabs">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <img src="/static/common/images/header/videos-black.png" alt="videos">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img src="/static/common/images/header/audios-black.png" alt="audios">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img src="/static/common/images/header/articles-black.png" alt="articles">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img src="/static/common/images/header/images-black.png" alt="images">
+                        </a>
+                      </li>
+                    </ul>
+                    <p>Click to upload media</p>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <div class="media-upload-URL">
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label for="mediaURL">ADD URL</label>
+                        <input type="text" class="form-control" id="mediaURL" placeholder="http://">
+                      </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+
+                <div class="project_lists" data-media-type="all">
+                {% for project_content in project_contents %}
+                  <div class="pl_thumbHolder hide {% if editable %}thumb-edit{% endif %}" data-media-id="{{ project_content.id }}" data-media-type="{{ project_content.get_media_type }}">
+                    <div class="thumb-edit-overlay"></div>
+                    <div class="thumbnail">
+                      <img src="{{ project_content.thumbnail }}" class="project-img"  alt="demo1">
+                      <div class="caption">
+                        <p>{{ project_content.title }}</p>
+                        <a href=""><img src="/static/common/images/header/{{ project_content.get_media_type }}-black.png" alt="{{ project_content.get_media_type }}" ></a>
+                      </div>
+                      <div class="thumb-edit-icons">
+                        <div class="squaredThree">
+                          <input type="checkbox" value="None" id="test_1" name="check" />
+                          <label for="test_1"></label>
+                        </div>
+                          {% if editable %}
+                            <a href=""><img src="/static/common/images/edit/img-pen.png" alt="edit"></a>
+                          {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+                </div>
+
+                <div class="project_lists hide" data-media-type="videos">
+
+                </div>
+
+                <div class="project_lists hide" data-media-type="audios">
+
+                </div>
+
+                <div class="project_lists hide" data-media-type="images">
+
+                </div>
+
+                <div class="project_lists hide" data-media-type="articles">
+
+                </div>
+
+        </div>
+
+          <div class="countDisplay">
+            <span>3</span> images and <span>5</span> videos selected
+            <button class="btn btn-black">DELETE</button>
+          </div>
+      </div>
+
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer-sec hide">
+      <div class="footer-form">
+        <div class="container">
+          <div class="col-md-6 col-sm-6 col-xs-12 pad-zero">
+            <div class="social-sec">
+              <div class="col-md-4 col-sm-4 col-xs-12 pad-align">
+                <h4>Follow us on</h4>
+              </div>
+              <div class="col-md-8 col-sm-8 col-xs-12 pad-zero">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="/static/common/images/social/fb.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/static/common/images/social/twitter.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/static/common/images/social/in.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="/static/common/images/social/gplus.png">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12 pad-zero">
+            <form class="form-inline form-inline-align">
+              <div class="form-group col-sm-12">
+                <label for="exampleInputEmail1" class="col-md-12">Subscribe to our Newsletters</label>
+                <div class="col-md-12 pad-zero">
+                  <div class="input-group input-grp-align">
+                    <input type="text" class="form-control email-id" id="exampleInputName2" placeholder="Enter your email">
+                    <span class="input-group-addon addon-align">
+                      <i class="fa fa-paper-plane"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-link mob-none hide">
+      <div class="container ">
+        <div class="foo-link-heading">
+          <h4>NETWORK</h4>
+          <span></span>
+        </div>
+        <div class="page-foo-links">
+          <ul>
+            <li><a href="">Join the Talent Pool</a></li>
+            <li>|</li>
+            <li><a href="">Book a Venue</a></li>
+            <li>|</li>
+            <li><a href="">Hire a Conceptual Artist</a></li>
+            <li>|</li>
+            <li><a href="">How it Works</a></li>
+            <li>|</li>
+            <li><a href="">T&C</a></li>
+            <li>|</li>
+            <li><a href="">Privacy Policy</a></li>
+            <li>|</li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyrights pad-zero col-md-12 stick-footer">
+      <div class="footer-copy">
+        <div class="container pad-zero">
+          <div class="col-md-6 float-left">
+            <img src="/static/common/images/footer-logo.png">
+          </div>
+          <div class="col-md-6">
+            <label>@ Copyrights Reserved </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Underscore Template -->
+
+<script type="text/x-underscore" id="tmpl_media_box">
+
+<% _.each(medias, function(media,key,list){ %>
+      <% if(editable){ %>
+      <div class="pl_thumbHolder thumb-edit" data-media-id="<%= media.id %>" data-media-type="<%= media.type %>">
+      <% }else{ %>
+      <div class="pl_thumbHolder" data-media-id="<%= media.id %>" data-media-type="<%= media.type %>">
+      <% } %>
+        <div class="thumb-edit-overlay"></div>
+        <div class="thumbnail">
+          <img class="project-img" src="<%= media.thumbnail %>" alt="demo1">
+          <div class="caption">
+            <p><%= media.title %></p>
+            <a href=""><img src="/static/common/images/header/<%= media.type %>-black.png" alt="<%= media.type %>"></a>
+          </div>
+          <div class="thumb-edit-icons">
+            <div class="squaredThree">
+              <input type="checkbox" value="None" id="test_1" name="check" />
+              <label for="test_1"></label>
+            </div>
+              <% if (editable){ %>
+                <a href=""><img src="/static/common/images/edit/img-pen.png" alt="edit"></a>
+               <% } %>
+          </div>
+        </div>
+      </div>
+ <% }) %>
+</script>
+
+  <!-- Underscore Template -->
+
+<!-- Js file -->
+<script src='/static/common/js/libs/jquery.nicescroll.min.js'></script>
+<script src='/static/common/js/libs/lightbox.js'></script>
+<script src='/static/common/js/libs/jquery.sticky.js'></script>
+<script src='/static/common/js/libs/underscore.min.js'></script>
+<script src='/static/common/js/src/ajax_helper.js'></script>
+<script>
+    // Passed to portfolio.js to set the profile and portfolio edit mode
+    var editable = {% if editable %} 'true' {% else %} 'false' {% endif %}
+</script>
+
+<script src="/static/app/accounts/js/portfolio.js"></script>
+
+<script>
+
+
+</script>
+</body>
+</html>
